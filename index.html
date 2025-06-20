@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caspero Casino NZ - 100% Welcome Bonus up to NZ$1,000 + 200 Free Spins</title>
+    <meta name="description" content="Join Caspero Casino New Zealand for the ultimate gaming experience. Get 100% welcome bonus up to NZ$1,000 + 200 free spins + 1 Bonus Crab. Play premium slots and table games with secure NZ payment methods.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Caspero Casino NZ - 100% Welcome Bonus up to NZ$1,000 + 200 Free Spins">
+    <meta property="og:description" content="Join Caspero Casino New Zealand for the ultimate gaming experience. Get 100% welcome bonus up to NZ$1,000 + 200 free spins + 1 Bonus Crab.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://caspero.co.nz">
+    <meta property="og:image" content="https://caspero.co.nz/images/hero.webp">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'casino-bg': '#13374d',
+                        'casino-cta': '#ea00f0',
+                        'casino-text': '#86bec5',
+                        'casino-emerald': '#10b981',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-casino-bg text-casino-text overflow-x-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-emoji">🎰</div>
+        <div class="floating-emoji">🎲</div>
+        <div class="floating-emoji">👻</div>
+        <div class="floating-emoji">🃏</div>
+        <div class="floating-emoji">💎</div>
+        <div class="floating-emoji">🎯</div>
+        <div class="floating-emoji">🔮</div>
+        <div class="floating-emoji">💰</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-casino-bg/95 backdrop-blur-sm z-50 border-b border-casino-emerald/20">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="/">
+                    <img src="images/logo.webp" class="h-12" alt="Caspero logo" />
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#hero" class="nav-link">Home</a>
+                    <a href="#games" class="nav-link">Games</a>
+                    <a href="#bonuses" class="nav-link">Bonuses</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#support" class="nav-link">Support</a>
+                </div>
+                <button class="cta-button-small md:hidden">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-casino-bg via-casino-bg/90 to-emerald-900/20"></div>
+        <div class="spotlight spotlight-1"></div>
+        <div class="spotlight spotlight-2"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="hero-title text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
+                        <span class="text-3d-emerald">Caspero</span>
+                        <span class="text-3d-white">Casino</span>
+                        <span class="text-3d-pink">Kiwi Adventure</span>
+                    </h1>
+                    
+                    <!-- Bonus Display Box -->
+                    <div class="bonus-box mb-8 p-6 rounded-2xl border-2 border-casino-emerald glow-box">
+                        <div class="text-center">
+                            <div class="text-casino-emerald text-lg font-semibold mb-2">🎁 WELCOME PACKAGE</div>
+                            <div class="text-3xl font-bold text-white mb-2">100% up to NZ$1,000</div>
+                            <div class="text-white text-xl font-bold mb-2">+ 200 FREE SPINS</div>
+                            <div class="text-casino-emerald text-lg">+ 1 BONUS CRAB 🦀</div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button onclick="redirectToCasino()" class="cta-button-large">
+                            <i class="fas fa-rocket mr-2"></i>CLAIM BONUS NOW
+                        </button>
+                        <button onclick="redirectToCasino()" class="cta-button-secondary">
+                            <i class="fas fa-play mr-2"></i>PLAY NOW
+                        </button>
+                    </div>
+
+                    <div class="mt-6 text-sm text-casino-text/80">
+                        <i class="fas fa-shield-alt mr-1"></i>
+                        Licensed & Secure • 18+ Only • Gamble Responsibly
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="hero-image-container">
+                        <img src="images/hero.png" alt="Caspero Casino Hero" class="hero-image rounded-2xl shadow-2xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-casino-bg/50 to-transparent rounded-2xl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Claim Bonus -->
+    <section class="py-20 relative">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">How to Claim Your Bonus</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">1. Sign Up</h3>
+                    <p>Create your Caspero account in under 2 minutes with your email and basic details.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">2. Make Deposit</h3>
+                    <p>Fund your account with minimum NZ$20 using secure NZ payment methods.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">3. Get Bonus</h3>
+                    <p>Receive 100% match bonus up to NZ$1,000 + 200 free spins instantly.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">4. Start Playing</h3>
+                    <p>Enjoy premium slots and table games with your bonus funds and free spins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Games -->
+    <section id="games" class="py-20 bg-gradient-to-b from-transparent to-casino-bg/50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Featured Slot Games</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="game-card">
+                    <img src="images/book_of_dead.webp" alt="Book of Dead" class="game-image">
+                    <div class="game-overlay">
+                        <h3 class="font-bold text-white">Book of Dead</h3>
+                        <button onclick="redirectToCasino()" class="mt-2 px-4 py-2 bg-casino-cta rounded-lg text-white font-semibold">
+                            Play Now
+                        </button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="images/ripcity.webp" alt="RipCity" class="game-image">
+                    <div class="game-overlay">
+                        <h3 class="font-bold text-white">RipCity</h3>
+                        <button onclick="redirectToCasino()" class="mt-2 px-4 py-2 bg-casino-cta rounded-lg text-white font-semibold">
+                            Play Now
+                        </button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="images/lebandit.webp" alt="Le Bandit" class="game-image">
+                    <div class="game-overlay">
+                        <h3 class="font-bold text-white">Le Bandit</h3>
+                        <button onclick="redirectToCasino()" class="mt-2 px-4 py-2 bg-casino-cta rounded-lg text-white font-semibold">
+                            Play Now
+                        </button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="images/stormforget.webp" alt="Stormforget" class="game-image">
+                    <div class="game-overlay">
+                        <h3 class="font-bold text-white">Stormforget</h3>
+                        <button onclick="redirectToCasino()" class="mt-2 px-4 py-2 bg-casino-cta rounded-lg text-white font-semibold">
+                            Play Now
+                        </button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="images/sugar_rush1000.webp" alt="Sugar Rush 1000" class="game-image">
+                    <div class="game-overlay">
+                        <h3 class="font-bold text-white">Sugar Rush 1000</h3>
+                        <button onclick="redirectToCasino()" class="mt-2 px-4 py-2 bg-casino-cta rounded-lg text-white font-semibold">
+                            Play Now
+                        </button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="images/zezeus.webp" alt="Ze Zeus" class="game-image">
+                    <div class="game-overlay">
+                        <h3 class="font-bold text-white">Ze Zeus</h3>
+                        <button onclick="redirectToCasino()" class="mt-2 px-4 py-2 bg-casino-cta rounded-lg text-white font-semibold">
+                            Play Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">About Caspero Casino</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="content-box p-8 rounded-2xl">
+                    <p class="text-lg leading-relaxed mb-6">
+                        Caspero Casino stands as New Zealand's premier online gaming destination, offering Kiwi players an exceptional gambling experience since its launch. The platform combines state-of-the-art technology with a vast selection of premium casino games, creating an environment where entertainment meets opportunity. Licensed and regulated under strict gaming authorities, Caspero maintains the highest standards of player protection and fair gaming practices.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-6">
+                        The casino features an extensive library of over 2,000 games from industry-leading software providers, including the latest video slots, classic table games, and immersive live dealer experiences. Each game undergoes rigorous testing to ensure random outcomes and fair play, giving players confidence in every spin and hand dealt. The platform's user-friendly interface makes navigation seamless across desktop and mobile devices, allowing players to enjoy their favourite games anytime, anywhere.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-6">
+                        Caspero's commitment to responsible gaming sets it apart in the New Zealand market. The casino provides comprehensive tools for players to manage their gaming habits, including deposit limits, session timers, and self-exclusion options. Professional support staff are available 24/7 to assist with any queries or concerns, ensuring every player receives the attention they deserve.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-6">
+                        Security remains paramount at Caspero Casino, with advanced SSL encryption protecting all player data and financial transactions. The platform supports multiple secure payment methods popular among New Zealand players, including POLi, bank transfers, and major credit cards. Fast withdrawal processing ensures players can access their winnings quickly and efficiently.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        The casino's loyalty program rewards regular players with exclusive bonuses, cashback offers, and VIP treatment. From welcome bonuses to ongoing promotions, Caspero ensures every player feels valued and appreciated. The platform's dedication to excellence has earned recognition within the gaming industry and trust among thousands of satisfied New Zealand players.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Providers -->
+    <section class="py-20 bg-gradient-to-b from-transparent to-casino-bg/30">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Premium Game Providers</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <div class="provider-card">NetEnt</div>
+                <div class="provider-card">Microgaming</div>
+                <div class="provider-card">Play'n GO</div>
+                <div class="provider-card">Pragmatic Play</div>
+                <div class="provider-card">Evolution Gaming</div>
+                <div class="provider-card">Yggdrasil</div>
+                <div class="provider-card">Big Time Gaming</div>
+                <div class="provider-card">Red Tiger</div>
+                <div class="provider-card">Quickspin</div>
+                <div class="provider-card">Thunderkick</div>
+                <div class="provider-card">Nolimit City</div>
+                <div class="provider-card">Push Gaming</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Secure NZ Payment Methods</h2>
+            <div class="max-w-6xl mx-auto">
+                <div class="content-box p-8 rounded-2xl mb-8">
+                    <p class="text-lg leading-relaxed mb-6">
+                        Caspero Casino prioritises convenience and security for New Zealand players by offering a comprehensive range of trusted payment methods. The platform supports all major banking options popular among Kiwi players, ensuring seamless deposits and withdrawals. Each payment method undergoes strict security protocols and compliance checks to guarantee safe transactions.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Processing times vary by method, with most deposits appearing instantly in player accounts. Withdrawal requests are processed within 24-48 hours, with funds typically reaching player accounts within 1-5 business days depending on the chosen method. The casino maintains transparent fee structures and minimum/maximum limits for all payment options.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="payment-table">
+                        <h3 class="text-2xl font-bold mb-4 text-casino-emerald">Deposit Methods</h3>
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b border-casino-emerald/30">
+                                    <th class="text-left py-3">Method</th>
+                                    <th class="text-left py-3">Min/Max</th>
+                                    <th class="text-left py-3">Processing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-casino-text/20">
+                                    <td class="py-3">POLi</td>
+                                    <td class="py-3">NZ$20 / NZ$5,000</td>
+                                    <td class="py-3">Instant</td>
+                                </tr>
+                                <tr class="border-b border-casino-text/20">
+                                    <td class="py-3">Bank Transfer</td>
+                                    <td class="py-3">NZ$50 / NZ$10,000</td>
+                                    <td class="py-3">1-3 hours</td>
+                                </tr>
+                                <tr class="border-b border-casino-text/20">
+                                    <td class="py-3">Visa/Mastercard</td>
+                                    <td class="py-3">NZ$20 / NZ$3,000</td>
+                                    <td class="py-3">Instant</td>
+                                </tr>
+                                <tr class="border-b border-casino-text/20">
+                                    <td class="py-3">Neosurf</td>
+                                    <td class="py-3">NZ$20 / NZ$1,000</td>
+                                    <td class="py-3">Instant</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="payment-table">
+                        <h3 class="text-2xl font-bold mb-4 text-casino-emerald">Withdrawal Methods</h3>
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b border-casino-emerald/30">
+                                    <th class="text-left py-3">Method</th>
+                                    <th class="text-left py-3">Min/Max</th>
+                                    <th class="text-left py-3">Processing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-casino-text/20">
+                                    <td class="py-3">Bank Transfer</td>
+                                    <td class="py-3">NZ$50 / NZ$5,000</td>
+                                    <td class="py-3">1-3 days</td>
+                                </tr>
+                                <tr class="border-b border-casino-text/20">
+                                    <td class="py-3">Credit Card</td>
+                                    <td class="py-3">NZ$50 / NZ$3,000</td>
+                                    <td class="py-3">3-5 days</td>
+                                </tr>
+                                <tr class="border-b border-casino-text/20">
+                                    <td class="py-3">E-wallet</td>
+                                    <td class="py-3">NZ$20 / NZ$2,000</td>
+                                    <td class="py-3">24 hours</td>
+                                </tr>
+                                <tr class="border-b border-casino-text/20">
+                                    <td class="py-3">Cryptocurrency</td>
+                                    <td class="py-3">NZ$100 / NZ$10,000</td>
+                                    <td class="py-3">1-2 hours</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & VIP Program -->
+    <section class="py-20 bg-gradient-to-b from-transparent to-casino-bg/50">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="section-title mb-8">Security Features</h2>
+                    <div class="content-box p-8 rounded-2xl">
+                        <p class="text-lg leading-relaxed mb-6">
+                            Caspero Casino employs military-grade security measures to protect player information and financial transactions. The platform utilises 256-bit SSL encryption, the same technology used by major banks worldwide, ensuring all data remains completely secure during transmission. Regular security audits and penetration testing maintain the highest protection standards.
+                        </p>
+                        <p class="text-lg leading-relaxed">
+                            Advanced fraud detection systems monitor all transactions in real-time, identifying and preventing suspicious activities before they can impact players. The casino maintains strict verification procedures and complies with international anti-money laundering regulations, creating a safe environment for all players to enjoy their gaming experience.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="section-title mb-8">VIP Program Levels</h2>
+                    <div class="space-y-4">
+                        <div class="vip-level">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-star text-yellow-400 mr-2"></i>
+                                <h3 class="text-xl font-bold text-white">Bronze Level</h3>
+                            </div>
+                            <p>Entry level with 5% weekly cashback and basic support</p>
+                        </div>
+                        <div class="vip-level">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-star text-gray-400 mr-2"></i>
+                                <h3 class="text-xl font-bold text-white">Silver Level</h3>
+                            </div>
+                            <p>10% weekly cashback, priority support, and exclusive bonuses</p>
+                        </div>
+                        <div class="vip-level">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-star text-yellow-500 mr-2"></i>
+                                <h3 class="text-xl font-bold text-white">Gold Level</h3>
+                            </div>
+                            <p>12% weekly cashback, personal account manager, faster withdrawals</p>
+                        </div>
+                        <div class="vip-level">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-crown text-casino-cta mr-2"></i>
+                                <h3 class="text-xl font-bold text-white">VIP Level 3</h3>
+                            </div>
+                            <p>15% weekly cashback, luxury gifts, exclusive tournaments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonuses Review -->
+    <section id="bonuses" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Comprehensive Bonus Review</h2>
+            <div class="max-w-6xl mx-auto">
+                <div class="content-box p-8 rounded-2xl mb-8">
+                    <p class="text-lg leading-relaxed mb-6">
+                        Caspero Casino's bonus structure represents exceptional value for New Zealand players, featuring competitive wagering requirements and transparent terms. The welcome package provides substantial playing funds through a 100% match bonus up to NZ$1,000, effectively doubling the initial deposit for maximum gaming potential. The accompanying 200 free spins are distributed across popular slot titles, giving players extensive opportunities to explore the game library without additional cost.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-6">
+                        The unique Bonus Crab feature sets Caspero apart from competitors, offering an innovative gamification element that rewards active players with surprise bonuses, free spins, and exclusive perks. This feature activates randomly during gameplay, creating excitement and additional winning opportunities beyond standard game mechanics. Players report high satisfaction with the frequency and value of Bonus Crab rewards.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Ongoing promotional offers maintain player engagement through weekly cashback programs, reload bonuses, and seasonal campaigns. The VIP program's 15% weekly cashback for Level 3 members represents industry-leading value, particularly for high-volume players. All bonuses feature reasonable wagering requirements ranging from 25x to 40x, significantly lower than many competing platforms.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bonus-details">
+                        <h3 class="text-2xl font-bold mb-4 text-casino-emerald">Welcome Bonus Features</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-casino-emerald mr-3 mt-1"></i>
+                                <span>100% match bonus up to NZ$1,000 on first deposit</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-casino-emerald mr-3 mt-1"></i>
+                                <span>200 free spins on premium slot games</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-casino-emerald mr-3 mt-1"></i>
+                                <span>Exclusive Bonus Crab feature activation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-casino-emerald mr-3 mt-1"></i>
+                                <span>30x wagering requirement on bonus funds</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-casino-emerald mr-3 mt-1"></i>
+                                <span>7-day validity period for free spins</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bonus-table">
+                        <h3 class="text-2xl font-bold mb-4 text-casino-emerald">Bonus Comparison</h3>
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b border-casino-emerald/30">
+                                    <th class="text-left py-3">Bonus Type</th>
+                                    <th class="text-left py-3">Value</th>
+                                    <th class="text-left py-3">Wagering</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-casino-text/20">
+                                    <td class="py-3">Welcome Match</td>
+                                    <td class="py-3">100% / NZ$1,000</td>
+                                    <td class="py-3">30x</td>
+                                </tr>
+                                <tr class="border-b border-casino-text/20">
+                                    <td class="py-3">Free Spins</td>
+                                    <td class="py-3">200 spins</td>
+                                    <td class="py-3">25x</td>
+                                </tr>
+                                <tr class="border-b border-casino-text/20">
+                                    <td class="py-3">Weekly Cashback</td>
+                                    <td class="py-3">Up to 15%</td>
+                                    <td class="py-3">No wagering</td>
+                                </tr>
+                                <tr class="border-b border-casino-text/20">
+                                    <td class="py-3">Reload Bonus</td>
+                                    <td class="py-3">50% / NZ$500</td>
+                                    <td class="py-3">35x</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Support -->
+    <section id="support" class="py-20 bg-gradient-to-b from-transparent to-casino-bg/30">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">24/7 Customer Support</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Live Chat</h3>
+                    <p class="mb-4">Instant support available 24/7 with average response time under 30 seconds.</p>
+                    <button onclick="redirectToCasino()" class="cta-button-small">Start Chat</button>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Email Support</h3>
+                    <p class="mb-4">Detailed assistance via email with responses within 2-4 hours.</p>
+                    <a href="mailto:support@caspero.co.nz" class="cta-button-small">Send Email</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Phone Support</h3>
+                    <p class="mb-4">Direct phone line for urgent matters and VIP player assistance.</p>
+                    <a href="tel:+64800123456" class="cta-button-small">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Promotions -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Exclusive Promotions</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="promo-card">
+                    <div class="promo-icon">
+                        <i class="fas fa-calendar-week"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Weekly Reload</h3>
+                    <p class="mb-4">Get 50% bonus up to NZ$500 every Wednesday. Perfect for midweek gaming sessions with reduced wagering requirements.</p>
+                    <div class="text-casino-emerald font-semibold">35x wagering • Valid 7 days</div>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Tournament Series</h3>
+                    <p class="mb-4">Monthly slot tournaments with NZ$10,000 prize pools. Compete against other Kiwi players for cash prizes and free spins.</p>
+                    <div class="text-casino-emerald font-semibold">No entry fee • Weekly events</div>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Birthday Bonus</h3>
+                    <p class="mb-4">Celebrate your special day with a personalised bonus package including free spins, cashback, and exclusive gifts.</p>
+                    <div class="text-casino-emerald font-semibold">Custom bonus • Annual gift</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Features -->
+    <section class="py-20 bg-gradient-to-b from-transparent to-casino-bg/50">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h2 class="section-title mb-8">Bonus Crab Feature</h2>
+                    <div class="content-box p-8 rounded-2xl">
+                        <p class="text-lg leading-relaxed mb-6">
+                            The innovative Bonus Crab is Caspero's signature feature that randomly appears during gameplay to deliver surprise rewards. This unique gamification element adds excitement to every spin, offering instant cash prizes, free spins, multipliers, and exclusive bonuses. The Bonus Crab becomes more active as players advance through VIP levels.
+                        </p>
+                        <p class="text-lg leading-relaxed mb-6">
+                            Players report Bonus Crab appearances every 50-100 spins on average, with rewards ranging from small instant wins to substantial bonus packages worth hundreds of dollars. The feature integrates seamlessly with all slot games and creates memorable gaming moments that keep players engaged.
+                        </p>
+                        <button onclick="redirectToCasino()" class="cta-button-large">
+                            <i class="fas fa-play mr-2"></i>Experience Bonus Crab
+                        </button>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img src="images/bonus-crab.png" alt="Bonus Crab Feature" class="feature-image rounded-2xl shadow-2xl mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Licensed & Trusted</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt text-4xl text-casino-emerald mb-4"></i>
+                    <h3 class="font-bold text-white mb-2">SSL Secured</h3>
+                    <p class="text-sm">256-bit encryption</p>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-certificate text-4xl text-casino-emerald mb-4"></i>
+                    <h3 class="font-bold text-white mb-2">Licensed</h3>
+                    <p class="text-sm">Regulated gaming</p>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-random text-4xl text-casino-emerald mb-4"></i>
+                    <h3 class="font-bold text-white mb-2">Fair Play</h3>
+                    <p class="text-sm">RNG certified</p>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-user-shield text-4xl text-casino-emerald mb-4"></i>
+                    <h3 class="font-bold text-white mb-2">Responsible</h3>
+                    <p class="text-sm">Player protection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-gradient-to-b from-transparent to-casino-bg/30">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Frequently Asked Questions</h2>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-xl font-bold text-white">How do I claim the welcome bonus?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Simply register a new account, make your first deposit of at least NZ$20, and the 100% match bonus up to NZ$1,000 plus 200 free spins will be automatically credited to your account. The Bonus Crab feature activates immediately upon first deposit.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-xl font-bold text-white">What are the wagering requirements?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The welcome bonus has a 30x wagering requirement on bonus funds, while free spins winnings require 25x wagering. These requirements must be met within 30 days of bonus activation. Slot games contribute 100% towards wagering requirements.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-xl font-bold text-white">How long do withdrawals take?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Withdrawal processing times vary by method: e-wallets process within 24 hours, bank transfers take 1-3 business days, and credit cards require 3-5 business days. VIP players enjoy priority processing with faster withdrawal times.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-xl font-bold text-white">Is Caspero Casino legal in New Zealand?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Caspero Casino operates under international gaming licenses and accepts New Zealand players. The platform complies with all applicable regulations and provides secure, fair gaming for Kiwi players aged 18 and over.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-casino-bg/80 border-t border-casino-emerald/20 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="logo-3d text-2xl font-bold text-casino-emerald mb-4">
+                        <i class="fas fa-ghost mr-2"></i>Caspero
+                    </div>
+                    <p class="text-casino-text/80 mb-4">New Zealand's premier online casino experience with secure gaming and exceptional rewards.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-casino-text hover:text-casino-emerald transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-casino-text hover:text-casino-emerald transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-casino-text hover:text-casino-emerald transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#games" class="text-casino-text/80 hover:text-casino-emerald transition-colors">Games</a></li>
+                        <li><a href="#bonuses" class="text-casino-text/80 hover:text-casino-emerald transition-colors">Bonuses</a></li>
+                        <li><a href="#about" class="text-casino-text/80 hover:text-casino-emerald transition-colors">About</a></li>
+                        <li><a href="#support" class="text-casino-text/80 hover:text-casino-emerald transition-colors">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="mailto:support@caspero.co.nz" class="text-casino-text/80 hover:text-casino-emerald transition-colors">Email Support</a></li>
+                        <li><a href="tel:+64800123456" class="text-casino-text/80 hover:text-casino-emerald transition-colors">Phone Support</a></li>
+                        <li><a href="#" class="text-casino-text/80 hover:text-casino-emerald transition-colors">Live Chat</a></li>
+                        <li><a href="#" class="text-casino-text/80 hover:text-casino-emerald transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Responsible Gaming</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-exclamation-triangle text-yellow-500 mr-2"></i>
+                            <span class="text-sm text-casino-text/80">18+ Only</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-shield-alt text-casino-emerald mr-2"></i>
+                            <span class="text-sm text-casino-text/80">Gamble Responsibly</span>
+                        </div>
+                        <div class="text-sm text-casino-text/80">
+                            <p>Problem Gambling Help:</p>
+                            <a href="tel:0800654655" class="text-casino-emerald hover:underline">0800 654 655</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-casino-emerald/20 mt-8 pt-8 text-center">
+                <p class="text-casino-text/60 text-sm">
+                    © 2025 Caspero Casino. All rights reserved. | 
+                    <span class="text-xs">Wagering requirements apply. 18+ only. Gamble responsibly.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const icon = this.querySelector('i');
+                
+                faqItem.classList.toggle('active');
+                
+                if (faqItem.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    answer.style.maxHeight = '0';
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // Redirect function for CTA buttons
+        function redirectToCasino() {
+            window.location.href = '/go';
+        }
+
+        // Parallax effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.hero-image-container');
+            if (parallax) {
+                const speed = scrolled * 0.5;
+                parallax.style.transform = `translateY(${speed}px)`;
+            }
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('nav-scrolled');
+            } else {
+                nav.classList.remove('nav-scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
